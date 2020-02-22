@@ -120,7 +120,18 @@ $query3= $dbh -> prepare($sql3);
 $query3->execute();
 $results3=$query3->fetchAll(PDO::FETCH_OBJ);
 $brands=$query3->rowCount();
-?>												
+	?>												<div class="stat-panel-number h1 "><?php echo htmlentities($totalvehicle);?></div>
+													<div class="stat-panel-title text-uppercase">Charts</div>
+												</div>
+											</div>
+											<a href="charts.php" class="block-anchor panel-footer text-center">Full Detail &nbsp; <i class="fa fa-arrow-right"></i></a>
+										</div>
+									</div>
+									<div class="col-md-3">
+										<div class="panel panel-default">
+											<div class="panel-body bk-info text-light">
+												<div class="stat-panel text-center">
+
 													<div class="stat-panel-number h1 "><?php echo htmlentities($brands);?></div>
 													<div class="stat-panel-title text-uppercase">Listed Brands</div>
 												</div>
@@ -154,7 +165,7 @@ $query4->execute();
 $results4=$query4->fetchAll(PDO::FETCH_OBJ);
 $subscribers=$query4->rowCount();
 ?>
-													<div class="stat-panel-number h1 "><?php echo htmlentities($subscribers);?></div>
+													<!-- <div class="stat-panel-number h1 "><?php echo htmlentities($subscribers);?></div>
 													<div class="stat-panel-title text-uppercase">Subscibers</div>
 												</div>
 											</div>
@@ -189,8 +200,8 @@ $query5= $dbh -> prepare($sql5);
 $query5->execute();
 $results5=$query5->fetchAll(PDO::FETCH_OBJ);
 $testimonials=$query5->rowCount();
-?>
-
+?> -->
+<!-- 
 													<div class="stat-panel-number h1 "><?php echo htmlentities($testimonials);?></div>
 													<div class="stat-panel-title text-uppercase">Testimonials</div>
 												</div>
@@ -204,18 +215,18 @@ $testimonials=$query5->rowCount();
 						</div>
 					</div>
 				</div>
+ -->
 
 
 
 
 
-
-
+<!-- 
 
 
 			</div>
 		</div>
-	</div>
+	</div> -->
 
 	<!-- Loading Scripts -->
 	<script src="js/jquery.min.js"></script>
